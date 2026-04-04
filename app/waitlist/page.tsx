@@ -16,7 +16,13 @@ export default function WaitlistPage() {
 
       <div className="mx-auto mt-14 max-w-md">
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.05] p-8 backdrop-blur">
-          <form className="space-y-6">
+          <Form onSubmit={async (formData) => {
+            // Placeholder - will integrate with Supabase later
+            console.log({
+              email: formData.get(WAITLIST_FORM.EMAIL),
+              useCase: formData.get(WAITLIST_FORM.USE_CASE)
+            });
+          }} className="space-y-6">
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-slate-300">
                 Email address
