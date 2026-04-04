@@ -1,14 +1,22 @@
+const USE_CASES = [
+  "founder",
+  "operator",
+  "creator",
+  "student",
+  "professional",
+  "other"
+] as const;
+
+export type UseCase = (typeof USE_CASES)[number];
+
 export type WaitlistEntry = {
   email: string;
-  useCase: typeof USE_CASES[number];
+  useCase: UseCase;
   createdAt?: string;
 };
 
-export type UserProfile = {
-  id: string;
+export type WaitlistFormValues = {
   email: string;
-  fullName?: string;
-  timezone?: string;
-  createdAt: string;
-  updatedAt: string;
+  useCase: UseCase;
+  notes?: string;
 };
