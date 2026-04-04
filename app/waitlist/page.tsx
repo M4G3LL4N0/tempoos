@@ -27,7 +27,7 @@ export default function WaitlistPage() {
           </p>
         </div>
 
-        <div className="mx-auto mt-14 max-w-xl rounded-[2rem] border border-white/10 bg-white/[0.05] p-8 backdrop-blur md:p-10">
+        <div className="glass-panel mx-auto mt-14 max-w-xl rounded-[2rem] border border-white/10 p-8 md:p-10">
           <form className="space-y-5">
             <div>
               <label

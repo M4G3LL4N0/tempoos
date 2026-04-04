@@ -15,9 +15,9 @@ export default function VisionPage() {
       />
 
       <div className="mt-14 space-y-8">
-        <div className="rounded-[2rem] border border-white/10 bg-white/[0.05] p-8">
+        <div className="glass-panel rounded-[2rem] border border-white/10 p-8">
           <h3 className="text-xl font-semibold text-white">The Problem</h3>
-          <p className="mt-4 text-slate-300">
+          <p className="mt-4 text-slate-300 leading-7">
             Modern knowledge work is a series of interruptions, context switches, and reactive decisions. 
             Without a system to protect and allocate time, even the most ambitious people lose weeks to chaos.
           </p>

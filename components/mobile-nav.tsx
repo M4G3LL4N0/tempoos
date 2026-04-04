@@ -29,8 +29,8 @@ export function MobileNav() {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+        <div className="fixed inset-0 z-50 backdrop-blur-sm" />
+        <Dialog.Panel className="glass-panel fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm">
           <div className="flex items-center justify-between">
             <span className="text-lg font-semibold tracking-[0.22em] text-white">TEMPOOS</span>
             <button

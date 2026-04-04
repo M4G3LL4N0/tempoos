@@ -68,7 +68,7 @@ export default function PricingPage() {
         {tiers.map((tier) => (
           <div
             key={tier.name}
-            className="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 backdrop-blur"
+            className="glass-panel rounded-[2rem] border border-white/10 p-6"
           >
             <h3 className="text-xl font-semibold text-white">{tier.name}</h3>
             <p className="mt-2 text-3xl font-semibold text-white">{tier.price}</p>
@@ -77,7 +77,7 @@ export default function PricingPage() {
             <ul className="mt-6 space-y-3">
               {tier.features.map((feature) => (
                 <li key={feature} className="flex items-center text-sm text-slate-300">
-                  <svg className="mr-2 h-4 w-4 text-sky-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="mr-2 h-4 w-4 text-emerald-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   {feature}
@@ -85,7 +85,7 @@ export default function PricingPage() {
               ))}
             </ul>
 
-            <button className="mt-8 w-full rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10">
+            <button className="cta-button-secondary mt-8 w-full">
               Get started
             </button>
           </div>

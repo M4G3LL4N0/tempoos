@@ -80,20 +80,18 @@ export function SiteShell() {
       <div className="pointer-events-none absolute left-1/2 top-0 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full bg-violet-400/10 blur-3xl" />
 
       <section className="section-shell pt-8 md:pt-10">
-        <header className="glass-panel rounded-full px-5 py-4">
-          <div className="flex items-center justify-between gap-4">
+        <header className="glass-panel rounded-full px-5 py-3">
+          <div className="flex items-center justify-between">
             <div className="text-lg font-semibold tracking-[0.22em] text-white">
               TEMPOOS
             </div>
-
             <nav className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
-              <a href="#features" className="transition hover:text-white">Features</a>
-              <a href="#platform" className="transition hover:text-white">Platform</a>
-              <a href="#use-cases" className="transition hover:text-white">Use cases</a>
-              <a href="#vision" className="transition hover:text-white">Vision</a>
-              <a href="#waitlist" className="transition hover:text-white">Waitlist</a>
+              <a href="#features" className="transition hover:text-emerald-200">Features</a>
+              <a href="#platform" className="transition hover:text-emerald-200">Platform</a>
+              <a href="#use-cases" className="transition hover:text-emerald-200">Use cases</a>
+              <a href="#vision" className="transition hover:text-emerald-200">Vision</a>
+              <a href="#waitlist" className="transition hover:text-emerald-200">Waitlist</a>
             </nav>
-
             <a href="#waitlist" className="cta-button-primary whitespace-nowrap">
               Request access
             </a>
