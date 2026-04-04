@@ -1,3 +1,5 @@
+import { MobileNav } from "./mobile-nav";
+
 function Pill({ children }: { children: React.ReactNode }) {
   return (
     <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300 backdrop-blur">
@@ -72,10 +74,13 @@ export function SiteShell() {
         <header className="flex items-center justify-between">
           <div className="text-lg font-semibold tracking-[0.22em] text-white">TEMPOOS</div>
           <nav className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
+            <a href="#problem" className="transition hover:text-white">The Problem</a>
+            <a href="#solution" className="transition hover:text-white">How We Solve It</a>
             <a href="#features" className="transition hover:text-white">Features</a>
-            <a href="#how" className="transition hover:text-white">How it works</a>
             <a href="#vision" className="transition hover:text-white">Vision</a>
+            <a href="#waitlist" className="transition hover:text-white">Waitlist</a>
           </nav>
+          <MobileNav />
         </header>
 
         <div className="grid min-h-[78vh] items-center gap-16 pt-16 md:grid-cols-[1.1fr_0.9fr] md:pt-24">
