@@ -8,11 +8,10 @@ export function MobileNav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "The Problem", href: "#problem" },
-    { name: "How We Solve It", href: "#solution" },
-    { name: "Features", href: "#features" },
-    { name: "Vision", href: "#vision" },
-    { name: "Waitlist", href: "#waitlist" },
+    { name: "Product", href: "/product" },
+    { name: "Pricing", href: "/pricing" },
+    { name: "Vision", href: "/vision" },
+    { name: "Waitlist", href: "/waitlist" },
   ];
 
   return (
