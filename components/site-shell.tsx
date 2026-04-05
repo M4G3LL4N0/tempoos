@@ -1,12 +1,33 @@
-export function Pill({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-xs tracking-[0.18em] text-emerald-200/90 backdrop-blur">
-      {children}
-    </div>
-  );
-}
+export const Metrics = ({ items }: { items: Array<{ label: string; value: string }> }) => (
+  <div className="grid gap-4 md:grid-cols-4">
+    {items.map((item) => (
+      <div key={item.label} className="metric-card rounded-[1.5rem] p-5 text-left">
+        <p className="text-xs uppercase tracking-[0.24em] text-slate-400">{item.label}</p>
+        <p className="mt-3 text-2xl font-semibold text-white">{item.value}</p>
+      </div>
+    ))}
+  </div>
+);
 
-export function SectionHeading({
+export const FeatureCards = ({ items }: { items: Array<{ title: string; text: string }> }) => (
+  <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+    {items.map(({ title, text }) => (
+      <div key={title} className="card-edge glass-panel rounded-[1.75rem] p-6">
+        <div className="mb-5 h-10 w-10 rounded-2xl bg-[linear-gradient(135deg,rgba(143,248,212,0.28),rgba(73,242,184,0.08))]" />
+        <h3 className="text-xl font-semibold text-white">{title}</h3>
+        <p className="mt-3 text-sm leading-7 text-slate-300">{text}</p>
+      </div>
+    ))}
+  </div>
+);
+
+export const Pill = ({ children }: { children: React.ReactNode }) => (
+  <div className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-xs tracking-[0.18em] text-emerald-200/90 backdrop-blur">
+    {children}
+  </div>
+);
+
+export const SectionHeading = ({
   eyebrow,
   title,
   description
