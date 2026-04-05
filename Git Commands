@@ -1,0 +1,2 @@
+git add components/site-shell.tsx components/dashboard-shell.tsx
+git commit -m "Elevate dashboard as core product with homepage integration"

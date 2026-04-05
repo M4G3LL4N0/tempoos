@@ -137,7 +137,7 @@ export function DashboardShell() {
         <div className="mt-4 grid gap-4 xl:grid-cols-[260px_minmax(0,1fr)]">
           <aside className="glass-panel h-fit rounded-[2rem] p-4">
             <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-4">
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-400">
+              <p className="text-xs uppercase tracking-[0.24em] text-slate-400">
                 Control center
               </p>
               <p className="mt-3 text-2xl font-semibold text-white">Today</p>
