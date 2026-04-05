@@ -28,6 +28,11 @@ export function SectionHeading({
   );
 }
 
+type FeatureItem = {
+  title: string;
+  text: string;
+};
+
 const metrics = [
   { label: "Hours recovered", value: "9.5 / week" },
   { label: "Priority alignment", value: "87%" },
@@ -35,7 +40,7 @@ const metrics = [
   { label: "Focus reclaimed", value: "+31%" }
 ];
 
-const features = [
+const defaultFeatures: FeatureItem[] = [
   {
     title: "AI Week Builder",
     text: "Turns goals, deadlines, and obligations into a realistic week that does not collapse the moment reality changes."
@@ -71,10 +76,14 @@ const useCases = [
   "Teams optimizing time allocation and output"
 ];
 
-export function FeatureCards() {
+export function FeatureCards({
+  items = defaultFeatures
+}: {
+  items?: FeatureItem[];
+}) {
   return (
     <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-      {features.map((feature) => (
+      {items.map((feature) => (
         <div
           key={feature.title}
           className="card-edge glass-panel rounded-[1.75rem] p-6"
