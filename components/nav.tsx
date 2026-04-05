@@ -11,9 +11,10 @@ export function Nav() {
         </div>
         <nav className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
           <a href="/product" className="transition hover:text-emerald-200">Product</a>
-          <a href="/pricing" className="transition hover:text-emerald-200">Pricing</a>
+          <a href="/generate" className="transition hover:text-emerald-200">Generate</a>
+          <a href="/planner" className="transition hover:text-emerald-200">Planner</a>
+          <a href="/dashboard" className="transition hover:text-emerald-200">Dashboard</a>
           <a href="/vision" className="transition hover:text-emerald-200">Vision</a>
-          <a href="/waitlist" className="transition hover:text-emerald-200">Waitlist</a>
         </nav>
         <MobileNav />
       </div>

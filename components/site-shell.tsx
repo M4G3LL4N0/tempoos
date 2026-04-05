@@ -29,10 +29,10 @@ export function SectionHeading({
 }
 
 const metrics = [
-  { label: "Hours recovered", value: "9.5 / week" },
-  { label: "Priority alignment", value: "87%" },
-  { label: "Slip risk reduction", value: "Low" },
-  { label: "Focus reclaimed", value: "+31%" }
+  { label: "Hours protected", value: "9.5 / week" },
+  { label: "Schedule adherence", value: "87%" }, 
+  { label: "Slip risk", value: "3.2%" },
+  { label: "Peak focus utilization", value: "92%" }
 ];
 
 const features = [
@@ -119,11 +119,11 @@ export function SiteShell() {
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <a href="/planner" className="cta-button-primary min-w-[180px]">
-                Open planner
+              <a href="/generate" className="cta-button-primary min-w-[180px]">
+                Generate Your Week
               </a>
-              <a href="#waitlist" className="cta-button-secondary min-w-[180px]">
-                Join the waitlist
+              <a href="/dashboard" className="cta-button-secondary min-w-[180px]">
+                See Dashboard
               </a>
             </div>
           </div>

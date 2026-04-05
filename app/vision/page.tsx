@@ -40,6 +40,39 @@ export default function VisionPage() {
           </p>
         </div>
       </div>
+
+      <SectionHeading 
+        eyebrow="How TempoOS Works"
+        title="From Chaos to Control"
+        description="Four core steps transform fragmented weeks into adaptive, mathematically-defensible time allocation"
+        className="mt-24"
+      />
+
+      <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        {[
+          {
+            name: "Input",
+            description: "Goals, constraints, priorities"
+          },
+          {
+            name: "Model", 
+            description: "AI generates optimal allocation"
+          },
+          {
+            name: "Adapt",
+            description: "Live adjustments to reality"
+          },
+          {
+            name: "Output",
+            description: "Defensible weekly plan"
+          }
+        ].map((item) => (
+          <div key={item.name} className="glass-panel rounded-2xl border border-white/10 p-6">
+            <h3 className="text-xl font-semibold text-white">{item.name}</h3>
+            <p className="mt-2 text-sm text-slate-300">{item.description}</p>
+          </div>
+        ))}
+      </div>
     </>
   );
 }

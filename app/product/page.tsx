@@ -10,9 +10,9 @@ export default function ProductPage() {
   return (
     <>
       <SectionHeading
-        eyebrow="Core platform"
-        title="Built to turn ambition into a survivable week."
-        description="Every feature is designed around one job: helping your life stop collapsing under misallocated hours, interruptions, and unrealistic plans."
+        eyebrow="AI Time Operating System"
+        title="Not another calendar. Not another to-do list."
+        description="TempoOS is a premium workflow for people whose weeks keep collapsing under misallocated hours. It plans your week, protects focus, and adapts when reality interrupts."
       />
 
       <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
