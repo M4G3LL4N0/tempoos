@@ -101,16 +101,16 @@ export function SiteShell() {
 
       <section className="section-shell pb-24 pt-8 md:pb-32 md:pt-10 animate-fade-in">
         <div className="section-card soft-noise overflow-hidden rounded-[2rem] px-6 py-16 md:px-12 md:py-24">
-          <div className="mx-auto max-w-5xl text-center">
+          <div className="mx-auto max-w-5xl text-center animate-fade-in">
             <Pill>AI operating system for time allocation</Pill>
 
-            <h1 className="hero-gradient-text mx-auto mt-7 max-w-5xl text-5xl font-semibold tracking-tight md:text-7xl md:leading-[1.02]">
+            <h1 className="hero-gradient-text mx-auto mt-6 max-w-5xl text-5xl font-semibold tracking-tight md:text-7xl md:leading-[1.02]">
               Stop losing days to chaos.
               <br />
               Build momentum that survives reality.
             </h1>
 
-            <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-300 md:text-xl">
+            <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 text-slate-300 md:text-xl animate-fade-in">
               TempoOS is a premium planning system for people whose calendars, goals,
               deadlines, and energy never fully line up. It builds your week, protects
               focus, adapts live, and helps your time move your life forward.
