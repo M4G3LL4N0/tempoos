@@ -1,4 +1,4 @@
-import { SectionHeading } from "@/components/site-shell";
+import { SectionHeading } from "@/components/ui";
 
 export const metadata = {
   title: "Vision — TempoOS",
