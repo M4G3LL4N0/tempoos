@@ -1,6 +1,6 @@
 export function Pill({ children }: { children: React.ReactNode }) {
   return (
-    <div className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-xs tracking-[0.18em] text-emerald-200/90 backdrop-blur">
+    <div className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-xs tracking-[0.18em] text-emerald-200/90 backdrop-blur transition-all hover:scale-[1.02] hover:bg-white/[0.08]">
       {children}
     </div>
   );
@@ -79,7 +79,7 @@ export function SiteShell() {
       <div className="pointer-events-none absolute right-[12%] top-10 h-80 w-80 rounded-full bg-indigo-400/10 blur-3xl" />
       <div className="pointer-events-none absolute left-1/2 top-0 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full bg-violet-400/10 blur-3xl" />
 
-      <section className="section-shell pt-8 md:pt-10">
+      <section className="section-shell pt-8 md:pt-10 animate-fade-in">
         <header className="glass-panel rounded-full px-5 py-3">
           <div className="flex items-center justify-between">
             <div className="text-lg font-semibold tracking-[0.22em] text-white">
@@ -99,7 +99,7 @@ export function SiteShell() {
         </header>
       </section>
 
-      <section className="section-shell pb-24 pt-8 md:pb-32 md:pt-10">
+      <section className="section-shell pb-24 pt-8 md:pb-32 md:pt-10 animate-fade-in">
         <div className="section-card soft-noise overflow-hidden rounded-[2rem] px-6 py-16 md:px-12 md:py-24">
           <div className="mx-auto max-w-5xl text-center">
             <Pill>AI operating system for time allocation</Pill>
@@ -243,7 +243,7 @@ export function SiteShell() {
         </div>
       </section>
 
-      <section id="features" className="section-shell py-24">
+      <section id="features" className="section-shell py-24 animate-fade-in">
         <SectionHeading
           eyebrow="Core platform"
           title="Built like an operating system, not a productivity toy."
@@ -264,7 +264,7 @@ export function SiteShell() {
         </div>
       </section>
 
-      <section id="use-cases" className="section-shell py-24">
+      <section id="use-cases" className="section-shell py-24 animate-fade-in">
         <div className="section-card rounded-[2rem] p-8 md:p-12">
           <SectionHeading
             eyebrow="Use cases"
@@ -285,7 +285,7 @@ export function SiteShell() {
         </div>
       </section>
 
-      <section id="vision" className="section-shell py-24">
+      <section id="vision" className="section-shell py-24 animate-fade-in">
         <div className="grid gap-6 md:grid-cols-[0.95fr_1.05fr]">
           <div className="glass-panel rounded-[2rem] p-8 md:p-10">
             <p className="text-xs uppercase tracking-[0.3em] text-slate-400">
@@ -317,7 +317,7 @@ export function SiteShell() {
         </div>
       </section>
 
-      <section id="waitlist" className="section-shell pb-28 pt-16">
+      <section id="waitlist" className="section-shell pb-28 pt-16 animate-fade-in">
         <div className="section-card rounded-[2rem] p-8 md:p-12">
           <div className="mx-auto max-w-3xl text-center">
             <Pill>Early access</Pill>
