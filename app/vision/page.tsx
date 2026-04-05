@@ -48,6 +48,15 @@ export default function VisionPage() {
         className="mt-24"
       />
 
+      <div className="mt-14 flex flex-col items-center gap-4 sm:flex-row">
+        <a href="/generate" className="cta-button-primary min-w-[200px]">
+          Generate Your Week
+        </a>
+        <a href="/dashboard" className="cta-button-secondary min-w-[200px]">
+          See Weekly Insights
+        </a>
+      </div>
+
       <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {[
           {
