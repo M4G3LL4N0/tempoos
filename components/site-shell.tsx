@@ -119,11 +119,11 @@ export function SiteShell() {
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <a href="#waitlist" className="cta-button-primary min-w-[180px]">
-                Join the waitlist
+              <a href="/planner" className="cta-button-primary min-w-[180px]">
+                Open planner
               </a>
-              <a href="#platform" className="cta-button-secondary min-w-[180px]">
-                Explore the platform
+              <a href="#waitlist" className="cta-button-secondary min-w-[180px]">
+                Join the waitlist
               </a>
             </div>
           </div>

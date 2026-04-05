@@ -147,6 +147,7 @@ export function DashboardShell() {
             </div>
 
             <nav className="mt-4 space-y-2">
+              <SideNavLink label="Planner" />
               <SideNavLink label="Overview" active />
               <SideNavLink label="Week Plan" />
               <SideNavLink label="Focus Blocks" />
