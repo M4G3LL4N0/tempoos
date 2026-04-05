@@ -1,65 +1,81 @@
 "use client";
 
 import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+
+const navItems = [
+  { href: "#features", label: "Features" },
+  { href: "#platform", label: "Platform" },
+  { href: "#use-cases", label: "Use cases" },
+  { href: "#vision", label: "Vision" },
+  { href: "#waitlist", label: "Waitlist" }
+];
 
 export function MobileNav() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const navigation = [
-    { name: "Product", href: "/product" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Vision", href: "/vision" },
-    { name: "Waitlist", href: "/waitlist" },
-  ];
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex md:hidden">
+    <>
       <button
         type="button"
-        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-300"
-        onClick={() => setMobileMenuOpen(true)}
+        aria-label="Toggle navigation"
+        aria-expanded={open}
+        onClick={() => setOpen((value) => !value)}
+        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-white backdrop-blur md:hidden"
       >
-        <span className="sr-only">Open main menu</span>
-        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+        <span className="sr-only">Open menu</span>
+        {open ? (
+          <span className="text-xl leading-none">✕</span>
+        ) : (
+          <span className="text-xl leading-none">☰</span>
+        )}
       </button>
-      <Dialog
-        as="div"
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
-      >
-        <div className="fixed inset-0 z-50 backdrop-blur-sm" />
-        <Dialog.Panel className="glass-panel fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm">
-          <div className="flex items-center justify-between">
-            <span className="text-lg font-semibold tracking-[0.22em] text-white">TEMPOOS</span>
-            <button
-              type="button"
-              className="-m-2.5 rounded-md p-2.5 text-slate-300"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="mt-12 flow-root">
-            <div className="-my-6 divide-y divide-white/10">
-              <div className="space-y-8 py-6">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-white/10"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </a>
-                ))}
+
+      {open ? (
+        <div className="fixed inset-0 z-50 md:hidden">
+          <button
+            type="button"
+            aria-label="Close navigation overlay"
+            onClick={() => setOpen(false)}
+            className="absolute inset-0 bg-slate-950/70 backdrop-blur-sm"
+          />
+          <div className="absolute inset-x-4 top-4 rounded-[1.75rem] border border-white/10 bg-slate-950/95 p-5 shadow-2xl">
+            <div className="flex items-center justify-between">
+              <div className="text-sm font-semibold tracking-[0.22em] text-white">
+                TEMPOOS
               </div>
+              <button
+                type="button"
+                aria-label="Close menu"
+                onClick={() => setOpen(false)}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-white"
+              >
+                ✕
+              </button>
             </div>
+
+            <nav className="mt-6 flex flex-col gap-2">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm text-slate-200 transition hover:bg-white/[0.06]"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+
+            <a
+              href="#waitlist"
+              onClick={() => setOpen(false)}
+              className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[linear-gradient(135deg,#8ff8d4_0%,#49f2b8_45%,#2ad890_100%)] px-5 py-3 text-sm font-semibold text-slate-950"
+            >
+              Request access
+            </a>
           </div>
-        </Dialog.Panel>
-      </Dialog>
-    </div>
+        </div>
+      ) : null}
+    </>
   );
 }
