@@ -243,6 +243,56 @@ export function SiteShell() {
         </div>
       </section>
 
+      <section id="how-it-works" className="section-shell py-24 animate-fade-in">
+        <SectionHeading
+          eyebrow="How it works"
+          title="Not a to-do app. Not a calendar. A time allocation system."
+          description="TempoOS takes your goals, deadlines, and calendar, then builds and maintains an optimized week that protects focus and adapts to reality."
+        />
+
+        <div className="mt-14 grid gap-6 md:grid-cols-4">
+          <div className="glass-panel rounded-[1.75rem] p-6">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-400/10 text-lg font-semibold text-emerald-300">
+              1
+            </div>
+            <h3 className="mt-5 text-xl font-semibold text-white">Input</h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              Connect your calendar, goals, deadlines, and energy patterns.
+            </p>
+          </div>
+
+          <div className="glass-panel rounded-[1.75rem] p-6">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-400/10 text-lg font-semibold text-emerald-300">
+              2
+            </div>
+            <h3 className="mt-5 text-xl font-semibold text-white">Model</h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              TempoOS builds an optimized time allocation plan for your week.
+            </p>
+          </div>
+
+          <div className="glass-panel rounded-[1.75rem] p-6">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-400/10 text-lg font-semibold text-emerald-300">
+              3
+            </div>
+            <h3 className="mt-5 text-xl font-semibold text-white">Adapt</h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              The system updates live when meetings land or deadlines shift.
+            </p>
+          </div>
+
+          <div className="glass-panel rounded-[1.75rem] p-6">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-400/10 text-lg font-semibold text-emerald-300">
+              4
+            </div>
+            <h3 className="mt-5 text-xl font-semibold text-white">Output</h3>
+            <p className="mt-3 text-sm leading-7 text-slate-300">
+              Get an optimized week, focus protection, and time insights.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="features" className="section-shell py-24 animate-fade-in">
         <SectionHeading
           eyebrow="Core platform"
