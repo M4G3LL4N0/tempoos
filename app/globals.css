@@ -192,6 +192,10 @@ a {
 
 .cta-button-primary:hover {
   transform: translateY(-1px);
+  box-shadow:
+    0 16px 40px rgba(42,216,144,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.4);
+  background: linear-gradient(135deg, #9ff9d9 0%, #5af3c0 45%, #3bda9a 100%);
 }
 
 .cta-button-secondary {
