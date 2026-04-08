@@ -5,3 +5,14 @@ node_modules
 .env.local
 dist
 .aider*
+node_modules/
+.next/
+dist/
+build/
+coverage/
+.vercel/
+.env.development.local
+.env.test.local
+.env.production.local
+*.log
+.DS_Store
