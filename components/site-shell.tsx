@@ -6,25 +6,19 @@ export function Pill({ children }: { children: React.ReactNode }) {
   );
 }
 
-interface SectionHeadingProps {
-  eyebrow: string;
-  title: string;
-  description: string;
-  className?: string;
-  eyebrowClassName?: string;
-  titleClassName?: string;
-}
-
 export function SectionHeading({
   eyebrow,
   title,
   description,
-  className,
-  eyebrowClassName = "text-xs uppercase tracking-[0.32em] text-slate-400",
-  titleClassName = "mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl",
-}: SectionHeadingProps) {
+  className = ""
+}: {
+  eyebrow: string;
+  title: string;
+  description: string;
+  className?: string;
+}) {
   return (
-    <div className="max-w-3xl">
+    <div className={`max-w-3xl ${className}`.trim()}>
       <p className="text-xs uppercase tracking-[0.32em] text-slate-400">{eyebrow}</p>
       <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
         {title}
@@ -84,17 +78,11 @@ const useCases = [
   "Teams optimizing time allocation and output"
 ];
 
-interface FeatureCardsProps {
-  items?: FeatureItem[];
-  className?: string;
-  cardClassName?: string;
-}
-
 export function FeatureCards({
-  items = defaultFeatures,
-  className = "mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3",
-  cardClassName = "card-edge glass-panel rounded-[1.75rem] p-6",
-}: FeatureCardsProps) {
+  items = defaultFeatures
+}: {
+  items?: FeatureItem[];
+}) {
   return (
     <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
       {items.map((feature) => (

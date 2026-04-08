@@ -88,7 +88,8 @@ export default function WaitlistPage() {
 
             <button
               type="submit"
-              className="w-full rounded-full border border-white/10 bg-white px-6 py-4 text-sm font-medium text-slate-950 transition hover:scale-[1.01]"
+              className="w-full rounded-full border border-white/10 bg-white px-6 py-4 text-sm font-medium text-slate-950 transition hover:scale-[1.01] disabled:opacity-70 disabled:cursor-not-allowed"
+              disabled={false}
             >
               Request early access
             </button>
