@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prepare": "pnpm install",
+    "predev": "pnpm install",
+    "prebuild": "pnpm install",
+    "prestart": "pnpm install",
+    "prelint": "pnpm install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
