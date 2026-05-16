@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navItems = [
   { href: "#features", label: "Features" },
@@ -12,6 +12,13 @@ const navItems = [
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
     <>
@@ -73,6 +80,9 @@ export function MobileNav() {
             >
               Request access
             </a>
+            <p className="mt-4 text-[11px] leading-relaxed text-slate-500">
+              Week plans and slip alerts are planning estimates — not calendar, medical, or employment scheduling advice.
+            </p>
           </div>
         </div>
       ) : null}
