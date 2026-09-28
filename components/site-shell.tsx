@@ -36,10 +36,10 @@ type FeatureItem = {
 };
 
 const metrics = [
-  { label: "Hours recovered", value: "9.5 / week" },
-  { label: "Priority alignment", value: "87%" },
-  { label: "Slip risk reduction", value: "Low" },
-  { label: "Focus reclaimed", value: "+31%" }
+  { label: "Sample week", value: "Protected blocks" },
+  { label: "Priority lens", value: "Goals first" },
+  { label: "Slip handling", value: "Rebalance" },
+  { label: "Focus mode", value: "Defended" }
 ];
 
 const defaultFeatures: FeatureItem[] = [
@@ -147,8 +147,11 @@ export function SiteShell() {
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <a href="#waitlist" className="cta-button-primary min-w-[180px]">
+              <a href="/waitlist" className="cta-button-primary min-w-[180px]">
                 Join the waitlist
+              </a>
+              <a href="/demo" className="cta-button-secondary min-w-[180px]">
+                Try week demo
               </a>
               <a href="#platform" className="cta-button-secondary min-w-[180px]">
                 Explore the platform
@@ -186,7 +189,7 @@ export function SiteShell() {
                     </p>
                   </div>
                   <div className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">
-                    Stable
+                    Sample week
                   </div>
                 </div>
 
