@@ -1,139 +1,95 @@
-# TempoOS
+# tempoos
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/hero-reduced.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero/hero-light.svg">
-    <img src="assets/hero/hero-motion.svg" alt="tempoos — animated project plate showing install &rarr; resolve tree &rarr; link &rarr; verify. Motion depicts this project's real state transition." width="100%">
-  </picture>
-</p>
+> tempoos is a web application project. Built in Supabase, Zod. 20 routes (/about, /api/checkout, /contact); 3 entry points (index.html, index.ts). PROTOTYPE. No test suite committed.
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/computational-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/hero/computational-light.svg">
-    <img src="assets/hero/computational-motion.svg" alt="State machine: install &rarr; resolve tree &rarr; link &rarr; verify." width="100%">
-  </picture>
-</p>
+The implementation summary below is intentionally conservative. Claims from NORTHSTAR are not presented as shipped functionality.
 
-The AI operating system for time allocation, focus protection, and adaptive weekly planning.
+- [GitHub repository](https://github.com/M4G3LL4N0/tempoos)
+- [Project site](https://tempoos.vercel.app)
 
-## Setup
+<!-- NOAERTH_IMAGE_SLOT: tempoos/hero -->
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Copy `.env.example` to `.env.local` and fill in the values
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
+## What it is
 
-## Deployment
+tempoos is a web application project. Built in Supabase, Zod. 20 routes (/about, /api/checkout, /contact); 3 entry points (index.html, index.ts). PROTOTYPE. No test suite committed.
 
-TempoOS is optimized for Vercel deployment:
+This repository is part of the NOAERTH venture ecosystem. The current public-facing evidence identifies it as a prototype / active development rather than a production-ready system.
 
-1. Push your changes to GitHub
-2. Create a new Vercel project
-3. Connect your GitHub repository
-4. Add environment variables in Vercel dashboard
-5. Deploy!
+## Capabilities
 
-## Environment Variables
+### Available evidence
 
-- `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase project URL
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Your Supabase anon key
-- `NEXT_PUBLIC_PLAUSIBLE_DOMAIN`: (Optional) For analytics
+- The repository contains the implementation and documentation associated with the project description above.
+- The technology signals currently visible in the local project are listed in the technical notes below.
+- No additional capability is asserted here without a direct implementation reference.
 
-## Tech Stack
+### Experimental or planned
 
-- Next.js 14
-- Tailwind CSS
-- Supabase (coming soon)
-- TypeScript
+Roadmap intent is deliberately not represented as shipped functionality. Review NORTHSTAR and source implementation together before adding future-facing claims.
 
-<!-- TRILLIONX:presentation:begin -->
+<!-- NOAERTH_IMAGE_SLOT: tempoos/workflow -->
 
-### Animated surfaces
+## How it works
 
-Generated from this repository's own source tree: every count, route and module below was measured, not written by hand.
+The current evidence supports a repository-level application or tool workflow, but does not provide enough verified detail in the Part 1 record to publish a component-level architecture diagram. The architecture slot is reserved for a deterministic diagram after the source flow is reviewed.
 
-#### Identity
+<!-- NOAERTH_IMAGE_SLOT: tempoos/architecture -->
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/hero-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/hero-light.svg">
-  <img alt="Identity diagram for tempoos" src="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/hero-motion.svg">
-</picture>
+## Quick start
 
-#### Entry points
+### Prerequisites
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/terminal-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/terminal-light.svg">
-  <img alt="Entry points diagram for tempoos" src="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/terminal-motion.svg">
-</picture>
+- A runtime suitable for `Node.js`.
+- A clean checkout of this repository.
 
-#### Modules
+### Install
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/architecture-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/architecture-light.svg">
-  <img alt="Modules diagram for tempoos" src="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/architecture-motion.svg">
-</picture>
+```sh
+pnpm install
+```
 
-#### Routes
+### Run locally
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/data_flow-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/data_flow-light.svg">
-  <img alt="Routes diagram for tempoos" src="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/data_flow-motion.svg">
-</picture>
+```sh
+pnpm run dev
+```
 
-#### Composition
+### Build
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/component_map-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/component_map-light.svg">
-  <img alt="Composition diagram for tempoos" src="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/component_map-motion.svg">
-</picture>
+```sh
+pnpm run build
+```
 
-#### Build and tests
+Commands are included only when they were detected in the repository manifest; verify environment-specific requirements before deployment.
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/build-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/build-light.svg">
-  <img alt="Build and tests diagram for tempoos" src="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/build-motion.svg">
-</picture>
+## Technical notes
 
-#### Identity object
+- **Primary language:** JavaScript/TypeScript
+- **Runtime:** Node.js
+- **Package manager:** pnpm
+- **Framework and integration signals:** Go, Next.js, Rust, Supabase, Tailwind
+- **Entry-point signals:** package.json
+- **Test evidence:** TEST_PLAN.md
+- **Repository topics:** `react`, `typescript`, `app`, `components`, `dung30n5`, `next-js`, `noaerth`, `prototype`
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/footer-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/footer-light.svg">
-  <img alt="Identity object diagram for tempoos" src="https://raw.githubusercontent.com/M4G3LL4N0/tempoos/main/.github-art/surfaces/footer-motion.svg">
-</picture>
+## Status and roadmap
 
-<!-- TRILLIONX:presentation:end -->
+**Current status:** Prototype / active development.
 
-<!-- TRILLIONX:evidence:begin -->
+**Current:** The repository and its documented implementation are available for inspection.
 
-## What is measurable here
+**Next:** Reconcile the README, source behavior, and safe public product language before adding deeper examples or diagrams.
 
-Generated by `.github-art` from the source tree at publish time.
+**Future:** Product direction is maintained separately and must not be read as a shipped feature list.
 
-| Signal | Value |
-| --- | --- |
-| HTTP routes | 20 |
-| Entry points | 3 |
-| Module roots | 4 |
-| Test files | 0 |
-| CI workflows | 0 |
-| Distinctive stack | Supabase, Zod |
-| Status | PROTOTYPE |
-| Evidence confidence | E3 |
-| Animated surfaces | 7 |
+## Contributing and license
 
-<!-- TRILLIONX:evidence:end -->
+Follow the repository's existing contribution and licensing files where present. This README does not invent an open-source license or contribution policy.
+
+## Visual documentation
+
+Image slots are intentionally comments until authentic screenshots, deterministic diagrams, or approved conceptual visuals exist. No absent image file is referenced.
+
+## NOAERTH
+
+[NOAERTH](https://www.noaerth.com) is the venture ecosystem associated with this project.
